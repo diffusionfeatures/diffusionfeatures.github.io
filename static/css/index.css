@@ -132,24 +132,32 @@ h3 {
   width: auto;
 }
 
-.carousel-teaser-padding{
-  padding: 0 0%;
-  /* distance from button to webpage edge */
+.carousel-body-vert-padding{
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
-.carousel-extra-padding{
-  padding: 0 18%;
-  /* distance from button to webpage edge */
-}
+/* below (within @media block) are only enabled when Not on mobile device */
+@media screen and (min-width: 769px) {
+  .carousel-teaser-padding{
+    padding: 0 0%;
+    /* distance from button to webpage edge */
+  }
 
-.carousel-spair-padding{
-  padding: 0 8%;
-  /* distance from button to webpage edge */
-}
+  .carousel-extra-padding{
+    padding: 0 18%;
+    /* distance from button to webpage edge */
+  }
 
-.carousel-homography-padding{
-  padding: 0 15%;
-  /* distance from button to webpage edge */
+  .carousel-spair-padding{
+    padding: 0 8%;
+    /* distance from button to webpage edge */
+  }
+
+  .carousel-homography-padding{
+    padding: 0 15%;
+    /* distance from button to webpage edge */
+  }
 }
 
 .results-carousel .item {
@@ -238,11 +246,16 @@ h3 {
 }
 
 .demo-section-videos{
-  margin: 0 160px;
-  gap: 40px;
+  margin: 0 24px;
+  gap: 20px;
   max-width: 1760px; /* 2x 800px videos + horizontal margins */
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  @media screen and (min-width: 769px) { /* desktop */
+    margin: 0 160px;
+    gap: 40px;
+    flex-direction: row;
+  }
 }
 
 .demo-section-video{
