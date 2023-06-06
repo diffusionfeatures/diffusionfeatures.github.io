@@ -75,7 +75,7 @@
             <div class="publication-links">
               <!-- PDF Link. -->
               <span class="link-block">
-                <a href="https://diffusionfeatures.github.io/"
+                <a href="https://drive.google.com/file/d/13xtD4nunMZipvx2-_frECqA0RjdRSlEH/view?usp=sharing"
                    class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                       <i class="ai ai-arxiv"></i>
@@ -188,9 +188,18 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Finding correspondences between images is a fundamental problem in computer vision. In this paper, we show that correspondence emerges in image diffusion models <i>without any explicit supervision</i>.
-            We propose a simple strategy to extract this implicit knowledge out of diffusion networks as image features, namely <strong>DI</strong>ffusion <strong>F</strong>ea<strong>T</strong>ures (<strong>DIFT</strong>), and use them to establish correspondences between real images.
-            Without any explicit fine-tuning or supervision on the task-specific data or annotations, DIFT is able to outperform both weakly-supervised methods and competitive off-the-shelf features in identifying semantic, geometric, and temporal correspondence. Particularly for semantic correspondence, DIFT from Stable Diffusion is able to outperform DINO and OpenCLIP by 19 and 14 accuracy points respectively on the challenging SPair-71k benchmark. It even outperforms the state-of-the-art supervised methods on 9 out of 18 categories while remaining on par for the overall performance. 
+            Finding correspondences between images is a fundamental problem in computer vision. 
+            In this paper, we show that correspondence emerges in image diffusion models 
+            <i>without any explicit supervision</i>. We propose a simple strategy to extract this implicit 
+            knowledge out of diffusion networks as image features, 
+            namely <strong>DI</strong>ffusion <strong>F</strong>ea<strong>T</strong>ures (<strong>DIFT</strong>), 
+            and use them to establish correspondences between real images. Without any additional fine-tuning or 
+            supervision on the task-specific data or annotations, DIFT is able to outperform both 
+            weakly-supervised methods and competitive off-the-shelf features in identifying semantic, 
+            geometric, and temporal correspondences. Particularly for semantic correspondence, 
+            DIFT from Stable Diffusion is able to outperform DINO and OpenCLIP by 19 and 14 accuracy points 
+            respectively on the challenging SPair-71k benchmark. It even outperforms the state-of-the-art 
+            supervised methods on 9 out of 18 categories while remaining on par for the overall performance.
           </p>
         </div>
       </div>
@@ -230,12 +239,12 @@
             and instance-level appearance change, 
             outperforming its self-supervised learning counterpart feature (DIFT_sd vs. OpenCLIP; DIFT_adm vs. DINO) over 14 PCK points.
             <br>
-            Below we visualize correspondence using different features. 
+            Below we visualize correspondence predictions using different features. 
             The leftmost image is the source image with a set of keypoints; 
             the rightmost image contains the ground truth correspondence for a target image 
             whereas any images in between contain keypoints found using feature matching 
             with various features. We use different colors to indicate different keypoints. 
-            Circles indicate correct keypoints and crosses for incorrect matches.
+            Circles indicate correctly-predicted keypoints and crosses for incorrect matches.
            </p>
         </div>
       </div>
@@ -272,7 +281,7 @@
   <br>
 
   <div class="columns is-centered has-text-centered">
-    <h3 class="title is-3">Image editing with DIFT</h3>
+    <h3 class="title is-3">Image Editing with DIFT</h3>
   </div>
  <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
@@ -320,7 +329,7 @@
   <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
-          <p> By using a small time step t, DIFT also shows competitive performance on geometric correspondence without any such supersion.
+          <p> By using a small time step t, DIFT also shows competitive performance on geometric correspondence without any such supervision.
             Below we show the sparse matching results on HPatches using DIFT after removing outliers. We can see it works well under challenging viewpoint and 
           illumination changes.</p>
         </div>
