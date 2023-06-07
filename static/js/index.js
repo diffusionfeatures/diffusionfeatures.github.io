@@ -45,7 +45,7 @@ $(document).ready(function() {
     for(var i = 0; i < carousels.length; i++) {
     	// Add listener to  event
     	carousels[i].on('before:show', state => {
-    		console.log(state);
+    		// console.log(state);
     	});
     }
 
@@ -54,7 +54,7 @@ $(document).ready(function() {
     if (element && element.bulmaCarousel) {
     	// bulmaCarousel instance is available as element.bulmaCarousel
     	element.bulmaCarousel.on('before-show', function(state) {
-    		console.log(state);
+    		// console.log(state);
     	});
     }
 
