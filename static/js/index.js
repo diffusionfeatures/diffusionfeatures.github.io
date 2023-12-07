@@ -74,7 +74,7 @@ $(document).ready(function() {
     // $('#interpolation-slider').prop('max', NUM_INTERP_FRAMES - 1);
 
 
-    var options = {
+    var scroll_options = {
 			slidesToScroll: 1,
 			slidesToShow: 3,
 			loop: true,
@@ -83,15 +83,15 @@ $(document).ready(function() {
 			autoplaySpeed: 3000,
     }
 
-    var carousels = bulmaCarousel.attach('.scroll_carousel', options);
-    for(var i = 0; i < carousels.length; i++) {
-    	carousels[i].on('before:show', state => {
+    var scroll_carousels = bulmaCarousel.attach('.scroll_carousel', scroll_options);
+    for(var i = 0; i < scroll_carousels.length; i++) {
+    	scroll_carousels[i].on('before:show', state => {
     	});
     }
 
-    var element = document.querySelector('#my-element');
-    if (element && element.bulmaCarousel) {
-    	element.bulmaCarousel.on('before-show', function(state) {
+    var scroll_element = document.querySelector('#my-element');
+    if (scroll_element && scroll_element.bulmaCarousel) {
+    	scroll_element.bulmaCarousel.on('before-show', function(state) {
     	});
     }
 
