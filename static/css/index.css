@@ -67,6 +67,7 @@ h3 {
   width: auto;
 }
 
+
 .carousel-body-vert-padding{
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
@@ -93,10 +94,15 @@ h3 {
     padding: 0 15%;
     /* distance from button to webpage edge */
   }
+
+  .carousel-jhmdb-padding{
+    padding: 0 10%;
+    /* distance from button to webpage edge */
+  }
 }
 
 .results-carousel .item {
-  margin: 0 10%; 
+  margin: 0 10%;
   /* distance from video to button */
 
   overflow: hidden;
@@ -104,7 +110,7 @@ h3 {
   border-radius: 10px;
   padding: 0;
   font-size: 0;
-  
+
   flex-grow: 1;
   display: flex;
   justify-items: stretch;

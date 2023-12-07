@@ -35,11 +35,11 @@
           <h1 class="title is-1">Emergent Correspondence <br> from Image Diffusion</h1>
           <div class="is-size-5 publication-authors">
             <span class="author-block">
-              <a href="https://lumingtang.info/">Luming Tang*</a>, </span>
+              <a href="https://lumingtang.info/">Luming Tang</a><sup>*</sup>, </span>
             <span class="author-block">
-              <a href="https://kmnp.github.io/">Menglin Jia*</a>, </span>
+              <a href="https://kmnp.github.io/">Menglin Jia</a><sup>*</sup>, </span>
             <span class="author-block">
-              <a href="https://www.cs.cornell.edu/~qqw/">Qianqian Wang*</a>, </span>
+              <a href="https://www.cs.cornell.edu/~qqw/">Qianqian Wang</a><sup>*</sup>, </span>
             <span class="author-block">
               <a href="https://www.cs.cornell.edu/~cpphoo/">Cheng Perng Phoo</a>,
             </span>
@@ -49,13 +49,19 @@
           </div>
 
           <div class="is-size-5 publication-authors">
-            <span class="author-block">Cornell University &nbsp; </span>
+            <span class="author-block">Cornell University</span>
           </div>
 
-          <div class="is-size-10 publication-authors">
+          <span class="is-size-7">(*Equal contribution)</span>
+          <br>
+          <br>
+
+          <!-- <div class="is-size-10 publication-authors">
             (*Equal contribution)
-          </div>
-          
+          </div> -->
+
+          <h1 style="font-size:24px;font-weight:bold">NeurIPS 2023</h1>
+
           <div class="column has-text-centered">
             <div class="publication-links">
               <!-- PDF Link. -->
@@ -104,13 +110,13 @@
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-toby">
             <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/teaser_video_0_compressed.mp4" /> 
+                <source type="video/mp4" src="static/videos/teaser_video_0_compressed.mp4" />
             </video>
           </div>
 
           <div class="item item-toby">
             <video poster="" autoplay playsinline muted loop>
-              <source type="video/mp4" src="static/videos/teaser_video_4_compressed.mp4" /> 
+              <source type="video/mp4" src="static/videos/teaser_video_4_compressed.mp4" />
             </video>
           </div>
 
@@ -131,18 +137,18 @@
               <source type="video/mp4" src="static/videos/teaser_video_1_compressed.mp4" />
             </video>
           </div>
-        
+
         </div>
       </div>
       <h3 class="subtitle has-text-centered">
           <font size="4">
           <span class="dnerf"></span>
-          Without explict supervision, Diffusion Features can find correspondences on real images across instances, categories, and even domains.
+          Without any supervision, Diffusion Features can find correspondences on real images across instances, categories, and even domains.
         </font>
       </h3>
     </div>
   </div>
-</div> 
+</div>
 
 
 <section class="section">
@@ -153,17 +159,17 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Finding correspondences between images is a fundamental problem in computer vision. 
-            In this paper, we show that correspondence emerges in image diffusion models 
-            <i>without any explicit supervision</i>. We propose a simple strategy to extract this implicit 
-            knowledge out of diffusion networks as image features, 
-            namely <strong>DI</strong>ffusion <strong>F</strong>ea<strong>T</strong>ures (<strong>DIFT</strong>), 
-            and use them to establish correspondences between real images. Without any additional fine-tuning or 
-            supervision on the task-specific data or annotations, DIFT is able to outperform both 
-            weakly-supervised methods and competitive off-the-shelf features in identifying semantic, 
-            geometric, and temporal correspondences. Particularly for semantic correspondence, 
-            DIFT from Stable Diffusion is able to outperform DINO and OpenCLIP by 19 and 14 accuracy points 
-            respectively on the challenging SPair-71k benchmark. It even outperforms the state-of-the-art 
+            Finding correspondences between images is a fundamental problem in computer vision.
+            In this paper, we show that correspondence emerges in image diffusion models
+            <i>without any explicit supervision</i>. We propose a simple strategy to extract this implicit
+            knowledge out of diffusion networks as image features,
+            namely <strong>DI</strong>ffusion <strong>F</strong>ea<strong>T</strong>ures (<strong>DIFT</strong>),
+            and use them to establish correspondences between real images. Without any additional fine-tuning or
+            supervision on the task-specific data or annotations, DIFT is able to outperform both
+            weakly-supervised methods and competitive off-the-shelf features in identifying semantic,
+            geometric, and temporal correspondences. Particularly for semantic correspondence,
+            DIFT from Stable Diffusion is able to outperform DINO and OpenCLIP by 19 and 14 accuracy points
+            respectively on the challenging SPair-71k benchmark. It even outperforms the state-of-the-art
             supervised methods on 9 out of 18 categories while remaining on par for the overall performance.
           </p>
         </div>
@@ -184,13 +190,13 @@
   <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
-          <p> 
-          Without any fine-tuning or correspondence supervision, DIFT is able to establish reasonable and accurate semantic correspondence, outperform previous 
+          <p>
+          Without any fine-tuning or correspondence supervision, DIFT is able to establish reasonable and accurate semantic correspondence, outperform previous
           weakly-supervised methods with a large margin, and even on par with the state-of-the-art supervised methods.
           </p>
       </div>
     </div>
-  </div> 
+  </div>
   <br>
   <br>
   <div class="columns is-centered has-text-centered">
@@ -199,17 +205,17 @@
   <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
-          <p> 
-            Compared to popular off-the-shelf features that (pre-)trained on similar data, 
-            DIFT identifies better correspondences under occlusion, clustered scenes, viewpoint change, pose variants, 
-            and instance-level appearance change, 
+          <p>
+            Compared to popular off-the-shelf features that (pre-)trained on similar data,
+            DIFT identifies better correspondences under occlusion, clustered scenes, viewpoint change, pose variants,
+            and instance-level appearance change,
             outperforming its self-supervised learning counterpart feature (DIFT_sd vs. OpenCLIP; DIFT_adm vs. DINO) over 14 PCK points.
             <br>
-            Below we visualize correspondence predictions using different features. 
-            The leftmost image is the source image with a set of keypoints; 
-            the rightmost image contains the ground truth correspondence for a target image 
-            whereas any images in between contain keypoints found using feature matching 
-            with various features. We use different colors to indicate different keypoints. 
+            Below we visualize correspondence predictions using different features.
+            The leftmost image is the source image with a set of keypoints;
+            the rightmost image contains the ground truth correspondence for a target image
+            whereas any images in between contain keypoints found using feature matching
+            with various features. We use different colors to indicate different keypoints.
             Circles indicate correctly-predicted keypoints and crosses for incorrect matches.
            </p>
         </div>
@@ -239,7 +245,7 @@
           <div class="item item-toby">
             <img style='height: auto; width: 100%; object-fit: contain' src="static/images/web_spair_4.jpg" alt="edit_propagation">
           </div>
-        
+
         </div>
       </div>
     </div>
@@ -256,19 +262,20 @@
         </div>
       </div>
     </div>
-  <div class="carousel-extra-padding">
+  <!-- <div class="carousel-extra-padding"> -->
+  <div class="carousel-spair-padding">
     <div class="hero-body carousel-body-vert-padding">
       <div class="container">
         <div id="results-carousel" class="carousel results-carousel">
           <div class="item item-toby">
             <video poster="" autoplay playsinline controls muted loop>
-                <source type="video/mp4" src="static/videos/image_edit_dog_compressed.mp4" /> 
+                <source type="video/mp4" src="static/videos/image_edit_dog_compressed.mp4" />
             </video>
           </div>
 
           <div class="item item-toby">
             <video poster="" autoplay playsinline controls muted loop>
-              <source type="video/mp4" src="static/videos/image_edit_cat_compressed.mp4" /> 
+              <source type="video/mp4" src="static/videos/image_edit_cat_compressed.mp4" />
             </video>
           </div>
 
@@ -277,7 +284,7 @@
               <source type="video/mp4" src="static/videos/image_edit_bird_compressed.mp4" />
             </video>
           </div>
-        
+
         </div>
       </div>
     </div>
@@ -296,12 +303,13 @@
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
           <p> By using a small time step t, DIFT also shows competitive performance on geometric correspondence without any such supervision.
-            Below we show the sparse matching results on HPatches using DIFT after removing outliers. We can see it works well under challenging viewpoint and 
+            Below we show the sparse matching results on HPatches using DIFT after removing outliers. We can see it works well under challenging viewpoint and
           illumination changes.</p>
         </div>
       </div>
     </div>
-  <div class="carousel-homography-padding">
+  <!-- <div class="carousel-homography-padding"> -->
+  <div class="carousel-spair-padding">
     <div class="hero-body carousel-body-vert-padding">
       <div class="container">
         <div id="results-carousel" class="carousel results-carousel">
@@ -316,7 +324,7 @@
           <div class="item item-toby">
             <img style='height: auto; width: 100%; object-fit: contain' src="static/images/homography2.jpg" alt="edit_propagation">
           </div>
-        
+
         </div>
       </div>
     </div>
@@ -334,97 +342,199 @@
  <div class="columns is-centered has-text-centered">
       <div class="column is-four-fifths">
         <div class="content has-text-justified">
-          <p> DIFT also demonstrates strong performance on temporal correspondence tasks, although never trained or fine-tuned on video data.
-            Below we show the video segementation propagation results on DAVIS using DIFT.
-          </p> 
+          <p> DIFT also demonstrates strong performance on temporal
+            correspondence tasks, although never trained or fine-tuned on video data.
+          </p>
+          <p>
+            Here are the video segementation propagation results on DAVIS using DIFT.
+          </p>
         </div>
       </div>
-    </div>
-  <div class="carousel-extra-padding">
+  </div>
+  <!-- <div class="carousel-extra-padding"> -->
+  <div class="carousel-spair-padding">
     <div class="hero-body carousel-body-vert-padding">
       <div class="container">
         <div id="results-carousel" class="carousel results-carousel">
 
           <div class="item item-toby">
             <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/davis/blackswan_adm_compressed.mp4" /> 
+                <source type="video/mp4" src="static/videos/davis/blackswan_adm_compressed.mp4" />
             </video>
           </div>
           <div class="item item-toby">
             <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/davis/car-shadow_adm_compressed.mp4" /> 
-            </video>
-          </div>
-
-          <div class="item item-toby">
-            <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/davis/cows_adm_compressed.mp4" /> 
+                <source type="video/mp4" src="static/videos/davis/car-shadow_adm_compressed.mp4" />
             </video>
           </div>
 
           <div class="item item-toby">
             <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/davis/dog_adm_compressed.mp4" /> 
+                <source type="video/mp4" src="static/videos/davis/cows_adm_compressed.mp4" />
             </video>
           </div>
-          <div class="item item-toby">
-            <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/davis/drift-chicane_adm_compressed.mp4" /> 
-            </video>
-          </div>  
 
           <div class="item item-toby">
             <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/davis/drift-straight_adm_compressed.mp4" /> 
+                <source type="video/mp4" src="static/videos/davis/dog_adm_compressed.mp4" />
             </video>
           </div>
           <div class="item item-toby">
             <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/davis/goat_adm_compressed.mp4" /> 
+                <source type="video/mp4" src="static/videos/davis/drift-chicane_adm_compressed.mp4" />
             </video>
-          </div>  
+          </div>
 
           <div class="item item-toby">
             <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/davis/dance-twirl_adm_compressed.mp4" /> 
+                <source type="video/mp4" src="static/videos/davis/drift-straight_adm_compressed.mp4" />
             </video>
-          </div>  
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/davis/goat_adm_compressed.mp4" />
+            </video>
+          </div>
 
           <div class="item item-toby">
             <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/davis/gold-fish_adm_compressed.mp4" /> 
+                <source type="video/mp4" src="static/videos/davis/dance-twirl_adm_compressed.mp4" />
+            </video>
+          </div>
+
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/davis/gold-fish_adm_compressed.mp4" />
             </video>
           </div>
           <div class="item item-toby">
             <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/davis/horsejump-high_adm_compressed.mp4" /> 
-            </video>
-          </div>  
-          <div class="item item-toby">
-            <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/davis/india_adm_compressed.mp4" /> 
+                <source type="video/mp4" src="static/videos/davis/horsejump-high_adm_compressed.mp4" />
             </video>
           </div>
           <div class="item item-toby">
             <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/davis/libby_adm_compressed.mp4" /> 
-            </video>
-          </div> 
-          <div class="item item-toby">
-            <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/davis/parkour_adm_compressed.mp4" /> 
+                <source type="video/mp4" src="static/videos/davis/india_adm_compressed.mp4" />
             </video>
           </div>
           <div class="item item-toby">
             <video poster="" autoplay playsinline muted loop>
-                <source type="video/mp4" src="static/videos/davis/pigs_adm_compressed.mp4" /> 
+                <source type="video/mp4" src="static/videos/davis/libby_adm_compressed.mp4" />
             </video>
-          </div> 
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/davis/parkour_adm_compressed.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/davis/pigs_adm_compressed.mp4" />
+            </video>
+          </div>
 
         </div>
       </div>
     </div>
   </div>
+
+  <div class="columns is-centered has-text-centered">
+    <div class="column is-four-fifths">
+      <div class="content has-text-justified">
+        <p>
+          Here are the human pose keypoints tracking results on JHMDB using DIFT.
+        </p>
+      </div>
+    </div>
+</div>
+
+  <div class="carousel-jhmdb-padding">
+    <div class="hero-body carousel-body-vert-padding">
+      <div class="container">
+        <div id="results-carousel" class="scroll_carousel results-carousel">
+
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/0.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/1.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/2.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/3.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/4.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/5.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/6.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/7.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/8.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/9.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/10.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/11.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/12.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/13.mp4" />
+            </video>
+          </div>
+          <div class="item item-toby">
+            <video poster="" autoplay playsinline muted loop>
+                <source type="video/mp4" src="static/videos/jhmdb/14.mp4" />
+            </video>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
 </section>
 
 
@@ -435,11 +545,11 @@
     <div class="column is-four-fifths">
       <h3 class="title is-3">Interactive Demo: Give it a Try!</h3>
         <div class="content has-text-justified">
-          We make an interative demo to demonstrate the semantic correspondence established by DIFT and you could try on your 
-          own images. You could use either the provided <a href="https://colab.research.google.com/drive/1tUTJ3UJxbqnfvUMvYH5lxcqt0UdUjdq6?usp=sharing">Colab</a> 
-          or the <a href="https://github.com/Tsingularity/dift/blob/main/demo.ipynb">jupyter notebook</a> in our github repository. 
-          After loading two images, you could left-click on an interesting point of the source image on the left, 
-          then after 1 or 2 seconds, the corresponding point on the target image will be displayed as a red point on the right, 
+          We make an interative demo to demonstrate the semantic correspondence established by DIFT and you could try on your
+          own images. You could use either the provided <a href="https://colab.research.google.com/drive/1tUTJ3UJxbqnfvUMvYH5lxcqt0UdUjdq6?usp=sharing">Colab</a>
+          or the <a href="https://github.com/Tsingularity/dift/blob/main/demo.ipynb">jupyter notebook</a> in our github repository.
+          After loading two images, you could left-click on an interesting point of the source image on the left,
+          then after 1 or 2 seconds, the corresponding point on the target image will be displayed as a red point on the right,
           together with a heatmap showing the per-pixel cosine distance calculated using DIFT. Here're two examples on cat and guitar:
         </div>
     </div>
@@ -461,7 +571,6 @@
   </div>
 </section>
 
-<br>
 
 <section class="section">
   <div class="columns is-centered">
@@ -470,17 +579,17 @@
       <div class="content has-text-justified">
         <ul>
           <li>
-            <a href="https://diffusion-hyperfeatures.github.io/">Diffusion Hyperfeatures</a> extracts 
-            feature maps varying across timesteps and layers from the diffusion process 
+            <a href="https://diffusion-hyperfeatures.github.io/">Diffusion Hyperfeatures</a> extracts
+            feature maps varying across timesteps and layers from the diffusion process
             and trains a lightweight neural network to aggregate them together for semantic correspondence.
           </li>
           <li>
-            <a href="https://sd-complements-dino.github.io/">A Tale of Two Features</a> fuses the Stable Diffusion 
+            <a href="https://sd-complements-dino.github.io/">A Tale of Two Features</a> fuses the Stable Diffusion
             features with DINOv2 features to build dense semantic correspondence.
           </li>
           <li>
-            <a href="https://arxiv.org/abs/2305.15581">Unsupervised Semantic Correspondence Using Stable Diffusion</a> 
-            first optimizes the prompt embedding to maximize attention on the region of interest, 
+            <a href="https://arxiv.org/abs/2305.15581">Unsupervised Semantic Correspondence Using Stable Diffusion</a>
+            first optimizes the prompt embedding to maximize attention on the region of interest,
             then uses it for semantic correspondence.
           </li>
         </ul>
@@ -497,9 +606,9 @@
       <h3 class="title is-3">Acknowledgements</h3>
       <div class="content has-text-justified">
         <p>
-          This work was partially funded by NSF 2144117 and the DARPA Learning with Less Labels program (HR001118S0044). 
-          We would like to thank Zeya Peng for her help on the edit propagation section and the project page, 
-          thank Kamal Gupta for sharing the evaluation details in the ASIC paper, 
+          This work was partially funded by NSF 2144117 and the DARPA Learning with Less Labels program (HR001118S0044).
+          We would like to thank Zeya Peng for her help on the edit propagation section and the project page,
+          thank Kamal Gupta for sharing the evaluation details in the ASIC paper,
           and thank Aaron Gokaslan, Utkarsh Mall, Jonathan Moon, Boyang Deng for valuable discussion and feedback.
         </p>
       </div>
@@ -507,8 +616,6 @@
   </div>
 
 </section>
-
- <br>
 
 
 <section class="section" id="BibTeX">
@@ -519,12 +626,14 @@
  </div>
   <div class="container is-max-desktop content">
     <pre><code>
-@article{tang2023dift,
-  title={Emergent Correspondence from Image Diffusion},
-  author={Tang, Luming and Jia, Menglin and Wang, Qianqian and Phoo, Cheng Perng and Hariharan, Bharath},
-  journal={arXiv preprint arXiv:2306.03881},
-  year={2023}
-}</code></pre>
+      @inproceedings{
+        tang2023emergent,
+        title={Emergent Correspondence from Image Diffusion},
+        author={Luming Tang and Menglin Jia and Qianqian Wang and Cheng Perng Phoo and Bharath Hariharan},
+        booktitle={Thirty-seventh Conference on Neural Information Processing Systems},
+        year={2023},
+        url={https://openreview.net/forum?id=ypOiXjdfnU}
+        }</code></pre>
   </div>
 </section>
 
@@ -533,7 +642,7 @@
   <div align="center" class="container">
     <div class="columns is-centered">
         <div class="content">
-            This website is borrowed from <a href="https://3d-moments.github.io">3D Moments</a> and <a href="https://infinite-nature-zero.github.io">InfiniteNature-Zero</a>.
+            This website is modified from <a href="https://3d-moments.github.io">3D Moments</a>, <a href="https://infinite-nature-zero.github.io">InfiniteNature-Zero</a>, and <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
         </div>
       </div>
     </div>

@@ -73,6 +73,28 @@ $(document).ready(function() {
     // setInterpolationImage(0);
     // $('#interpolation-slider').prop('max', NUM_INTERP_FRAMES - 1);
 
+
+    var options = {
+			slidesToScroll: 1,
+			slidesToShow: 3,
+			loop: true,
+			infinite: false,
+			autoplay: false,
+			autoplaySpeed: 3000,
+    }
+
+    var carousels = bulmaCarousel.attach('.scroll_carousel', options);
+    for(var i = 0; i < carousels.length; i++) {
+    	carousels[i].on('before:show', state => {
+    	});
+    }
+
+    var element = document.querySelector('#my-element');
+    if (element && element.bulmaCarousel) {
+    	element.bulmaCarousel.on('before-show', function(state) {
+    	});
+    }
+
     bulmaSlider.attach();
 
 })

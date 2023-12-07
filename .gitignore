@@ -1,2 +1,4 @@
 .DS_Store
 token.txt
+static/videos/jhmdb/*.gif
+static/videos/jhmdb/compress.sh
